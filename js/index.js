@@ -66,5 +66,20 @@ window.addEventListener("resize", () => {
 window.addEventListener("scroll", () => {
   let logoHeading = document.querySelector("h1.logo-heading");
 
-  logoHeading.style.fontWeight = 1000;
+  let currentBackgroundColor = logoHeading.style.backgroundColor;
+
+  if (!currentBackgroundColor) {
+    currentBackgroundColor = "lightblue";
+  }
+
+  switch (currentBackgroundColor) {
+    case "lightblue":
+      logoHeading.style.backgroundColor = "white";
+      break;
+    case "white":
+      logoHeading.style.backgroundColor = "lightblue";
+      break;
+    default:
+      break;
+  }
 });
