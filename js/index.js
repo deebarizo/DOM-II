@@ -83,3 +83,27 @@ window.addEventListener("scroll", () => {
       break;
   }
 });
+
+// let footer = document.querySelector("footer");
+
+// footer.addEventListener("click", event => {
+//   event.target.style.backgroundColor = "lightgreen";
+// });
+
+// let footerParagraph = document.querySelector("footer p");
+
+// footerParagraph.addEventListener("click", event => {
+//   event.stopPropagation();
+// });
+
+let destinationDiv = document.querySelector(".destination");
+
+destinationDiv.addEventListener("click", event => {
+  event.target.style.backgroundColor = "lightgreen";
+});
+
+let destinationDivButton = document.querySelector(".destination .btn");
+
+destinationDivButton.addEventListener("click", event => {
+  event.stopPropagation();
+});
